@@ -1,4 +1,30 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: "com.jfrog.bintray"
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'CustomTextEditView'
+
+    publishedGroupId = 'com.ifucolo:custom-text-edittext-view:custom:1.0.0'
+    libraryName = 'CustomTextEditView'
+    artifact = 'custom'
+
+    libraryDescription = 'CustomTextEditView'
+
+    siteUrl = 'https://github.com/ifucolo/CustomTextEditView'
+    gitUrl = 'https://github.com/ifucolo/CustomTextEditView.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'ifucolo'
+    developerName = 'Iago Fucolo'
+    developerEmail = 'iagofucolo@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 25
@@ -28,3 +54,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 }
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

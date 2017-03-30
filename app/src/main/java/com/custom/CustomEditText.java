@@ -1,4 +1,4 @@
-package com.customtexteditview;
+package com.custom;
 
 import android.content.Context;
 import android.util.AttributeSet;
